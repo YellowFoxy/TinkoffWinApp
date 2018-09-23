@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="TinkoffWinApp.Views.ProductDetailView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:TinkoffWinApp.Controls"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Page.Resources>
+        <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="TextWrapping" Value="WrapWholeWords"/>
+        </Style>
+
+        <DataTemplate x:Key="BenefitTemplate">
+            <StackPanel Padding="0,6">
+                <Rectangle Height="1" HorizontalAlignment="Stretch" Fill="Black"/>
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path = Icon.SomeText}"/>
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Text}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
+    <ListView ItemTemplate="{StaticResource BenefitTemplate}"
+              ItemsSource="{Binding Path=Parameter.Benefits}"
+              Header="{Binding Parameter}"
+              Padding="6">
+        <ListView.HeaderTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Vertical">
+                    <controls:ImageLoadingControl ImageAddress="{Binding BuildImagePath}"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Title}"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Slogan}"/>
+                </StackPanel>
+            </DataTemplate>
+        </ListView.HeaderTemplate>
+    </ListView>
+</Page>
