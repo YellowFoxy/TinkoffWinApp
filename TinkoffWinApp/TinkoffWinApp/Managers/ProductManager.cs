@@ -32,7 +32,7 @@ namespace TinkoffWinApp.Managers
                 return new List<Product>();
 
             _loadedProducts = result.Result?.Value;
-            return _loadedProducts;//new List<Product> { result.Result?.Value[0],result.Result?.Value[1], result.Result?.Value[2] };
+            return _loadedProducts;
         }
     }
 }

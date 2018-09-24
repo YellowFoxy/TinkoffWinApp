@@ -4,57 +4,62 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:carousel="using:TinkoffWinApp.Controls.Carousel"
     xmlns:converters ="using:TinkoffWinApp.Support.Converters"
+    xmlns:micro="using:Caliburn.Micro"
     xmlns:controls="using:TinkoffWinApp.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
         <converters:StringToColorConverter x:Key="StringToColorConverter" />
+
+        <DataTemplate x:Key="ItemHeaderTemplate">
+            <StackPanel>
+                <controls:ImageLoadingControl Margin="10"
+                                              MaxWidth="180"
+                                              HorizontalAlignment="Center"
+                                              Background="Red"
+                                              ImageAddress="{Binding}"/>
+            </StackPanel>
+        </DataTemplate>
         
-        <DataTemplate x:Key="ProductItemTemplate">
-            <ListView x:Name="BenefitParentView" 
-                      VerticalAlignment="Stretch"
-                      VerticalContentAlignment="Stretch"
-                      Background="{Binding BgColor, Converter={StaticResource StringToColorConverter}}" 
-                      Header="{Binding BuildImagePath}"
-                      ItemsSource="{Binding Benefits}"
-                      SelectionMode="None"
-                      MaxWidth="200"
-                      IsHitTestVisible="False">
-                <ListView.HeaderTemplate>
-                    <DataTemplate>
-                        <StackPanel>
-                            <controls:ImageLoadingControl Margin="10"
-                                                          MaxWidth="180"
-                                                          HorizontalAlignment="Center"
-                                                          Background="Red"
-                                                          ImageAddress="{Binding}"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.HeaderTemplate>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Padding="0,6">
-                            <Rectangle Height="1" HorizontalAlignment="Stretch" Fill="Black"/>
-                            <TextBlock TextWrapping="WrapWholeWords" 
-                                       Foreground="{Binding ElementName=BenefitParentView, Path=DataContext.BgColor, Converter={StaticResource StringToColorConverter}, ConverterParameter=Revers}" 
-                                       Text="{Binding Path = Icon.SomeText}"/>
-                            <TextBlock TextWrapping="WrapWholeWords" 
-                                       Foreground="{Binding ElementName=BenefitParentView, Path=DataContext.BgColor, Converter={StaticResource StringToColorConverter}, ConverterParameter=Revers}" 
-                                       Text="{Binding Text}"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+        <DataTemplate x:Key="ProductBenefitItemTemplate">
+            <StackPanel Padding="0,6">
+                <Rectangle Height="1" HorizontalAlignment="Stretch" Fill="Black"/>
+                <TextBlock TextWrapping="WrapWholeWords" 
+                           Foreground="{Binding ElementName=BenefitParentView, Path=DataContext.BgColor, Converter={StaticResource StringToColorConverter}, ConverterParameter=Revers}" 
+                           Text="{Binding Path = Icon.SomeText}"/>
+                <TextBlock TextWrapping="WrapWholeWords" 
+                           Foreground="{Binding ElementName=BenefitParentView, Path=DataContext.BgColor, Converter={StaticResource StringToColorConverter}, ConverterParameter=Revers}" 
+                           Text="{Binding Text}"/>
+            </StackPanel>
+        </DataTemplate>
+
+            <DataTemplate x:Key="ProductItemTemplate">
+                <ListView x:Name="BenefitParentView" 
+                          VerticalAlignment="Stretch"
+                          VerticalContentAlignment="Stretch"
+                          Background="{Binding BgColor, Converter={StaticResource StringToColorConverter}}" 
+                          Header="{Binding BuildImagePath}"
+                          HeaderTemplate="{StaticResource ItemHeaderTemplate}"
+                          ItemsSource="{Binding Benefits}"
+                          ItemTemplate="{StaticResource ProductBenefitItemTemplate}"
+                          SelectionMode="None"
+                          MaxWidth="200"
+                          IsHitTestVisible="False">
+                </ListView>
         </DataTemplate>
     </Page.Resources>
     
     <Grid Background="White" 
           VerticalAlignment="Stretch" 
-          Padding="0 8">
+          Padding="0 8 0 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
         <ListView ItemsSource="{Binding Collection}"
+                  Grid.Row="0"
                   ItemTemplate="{StaticResource ProductItemTemplate}"
                   SelectedItem="{Binding SelectedProduct, Mode=TwoWay}">
             <ListView.ItemsPanel>
@@ -74,72 +79,9 @@
                 </Style>
             </ListView.ItemContainerStyle>
         </ListView>
-        <!--<GridView x:Name="ImagesList" ScrollViewer.HorizontalScrollBarVisibility="Auto"
-                  ScrollViewer.VerticalScrollBarVisibility="Disabled"
-                  ScrollViewer.VerticalScrollMode="Disabled"
-                  ScrollViewer.HorizontalScrollMode="Auto"
-                  ItemsSource="{Binding Collection}"
-                  SelectedItem="{Binding SelectedProduct, Mode=TwoWay}"
-                  IsItemClickEnabled="True"
-                  ItemTemplate="{StaticResource ProductItemTemplate}">
-            <GridView.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <ItemsStackPanel Orientation="Horizontal"/>
-                </ItemsPanelTemplate>
-            </GridView.ItemsPanel>
-            <GridView.Template>
-                <ControlTemplate TargetType="GridView">
-                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" 
-                            Background="{TemplateBinding Background}">
-                        <ScrollViewer x:Name="ScrollViewer" AutomationProperties.AccessibilityView="Raw" 
-                                      HorizontalSnapPointsType="MandatorySingle"
-                                      HorizontalSnapPointsAlignment="Center"
-                                      BringIntoViewOnFocusChange="{TemplateBinding ScrollViewer.BringIntoViewOnFocusChange}" 
-                                      HorizontalScrollMode="{TemplateBinding ScrollViewer.HorizontalScrollMode}" 
-                                      HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" 
-                                      IsHorizontalRailEnabled="{TemplateBinding ScrollViewer.IsHorizontalRailEnabled}" 
-                                      IsHorizontalScrollChainingEnabled="{TemplateBinding ScrollViewer.IsHorizontalScrollChainingEnabled}"
-                                      IsVerticalScrollChainingEnabled="{TemplateBinding ScrollViewer.IsVerticalScrollChainingEnabled}" 
-                                      IsVerticalRailEnabled="{TemplateBinding ScrollViewer.IsVerticalRailEnabled}" 
-                                      IsDeferredScrollingEnabled="{TemplateBinding ScrollViewer.IsDeferredScrollingEnabled}"
-                                      TabNavigation="{TemplateBinding TabNavigation}" 
-                                      VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}" 
-                                      VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}" ZoomMode="{TemplateBinding ScrollViewer.ZoomMode}">
-                            <ItemsPresenter FooterTransitions="{TemplateBinding FooterTransitions}" 
-                                            FooterTemplate="{TemplateBinding FooterTemplate}" Footer="{TemplateBinding Footer}"
-                                            HeaderTemplate="{TemplateBinding HeaderTemplate}" Header="{TemplateBinding Header}" 
-                                            HeaderTransitions="{TemplateBinding HeaderTransitions}" Padding="{TemplateBinding Padding}"/>
-                        </ScrollViewer>
-                    </Border>
-                </ControlTemplate>
-            </GridView.Template>
-            <GridView.ItemContainerStyle>
-                <Style TargetType="GridViewItem">
-                    <Setter Property="Margin" Value="10"/>
-                    <Setter Property="BorderThickness" Value="0"/>
-                    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
-                </Style>
-            </GridView.ItemContainerStyle>
-        </GridView>-->
-        <!--<carousel:LoopingCarousel InvertPositive="True" ItemDepth="300"
-                                  ItemMargin="0" ItemRotationX="0"
-                                  ItemTemplate="{StaticResource ProductItemTemplate}"
-                                  ItemsSource="{Binding Collection}"
-                                  SelectedIndex="1"
-                                  ItemRotationY="45" ItemRotationZ="0"
-                                  VerticalAlignment="Stretch"
-                                  VerticalContentAlignment="Stretch"
-                                  Orientation="Horizontal">
-            <carousel:LoopingCarousel.EasingFunction>
-                <CubicEase EasingMode="EaseOut" />
-            </carousel:LoopingCarousel.EasingFunction>
-            <carousel:LoopingCarousel.ItemContainerStyle>
-                <Style TargetType="carousel:LoopingCarouselItem">
-                    <Setter Property="Margin" Value="10"/>
-                    <Setter Property="BorderThickness" Value="0"/>
-                    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
-                </Style>                
-            </carousel:LoopingCarousel.ItemContainerStyle>
-        </carousel:LoopingCarousel>-->
-    </Grid>
+        <CommandBar Grid.Row="1" Visibility="{Binding AppBarVisibility}">
+            <AppBarButton Icon="Sort" Label="Обновить"
+                          micro:Message.Attach="[Event Click]=[Action AppBarUpdateClick]"/>
+        </CommandBar>
+    </Grid>    
 </Page>

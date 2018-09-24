@@ -1,7 +1,5 @@
 ﻿using Caliburn.Micro;
 using System.Collections.Generic;
-using System.Linq;
-using TinkoffWinApp.Extensions;
 using TinkoffWinApp.Managers;
 using TinkoffWinApp.Models;
 
@@ -46,10 +44,6 @@ namespace TinkoffWinApp.ViewModels
         protected override async void OnInitialize()
         {
             Collection = await LoadTask(() => _productManager.GetProductsList());
-            if (!Collection.IsEmpty())
-            {
-                //ProductSelected(Collection.FirstOrDefault());
-            }
         }
 
         private void ProductSelected(Product selectedProduct)
@@ -58,6 +52,11 @@ namespace TinkoffWinApp.ViewModels
                 return;
 
             NavigationService.NavigateToViewModel<ProductDetailViewModel>(selectedProduct);
+        }
+
+        public async void AppBarUpdateClick()
+        {
+            Collection = await LoadTask(() => _productManager.GetProductsList(true));
         }
     }
 }

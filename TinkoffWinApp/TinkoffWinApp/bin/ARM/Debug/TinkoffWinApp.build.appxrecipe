@@ -10,22 +10,22 @@
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>52b3397c-1d36-4715-a29f-0d6e6a31aeac</PackageIdentityName>
     <PackageIdentityPublisher>CN=User</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Projects\TinkoffWinApp\TinkoffWinApp\obj\ARM\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\obj\ARM\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\TinkoffWinApp.exe">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\TinkoffWinApp.exe">
       <PackagePath>entrypoint\TinkoffWinApp.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\caliburn.micro\3.2.0\lib\uap10.0\Caliburn.Micro.Platform.Core.dll">
@@ -442,52 +442,49 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\win2d.uwp\1.21.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\TinkoffWinApp.xr.xml">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\TinkoffWinApp.xr.xml">
       <PackagePath>TinkoffWinApp.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Controls\Carousel\LoopingCarousel.xbf">
-      <PackagePath>Controls\Carousel\LoopingCarousel.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Controls\ImageLoadingControl.xbf">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Controls\ImageLoadingControl.xbf">
       <PackagePath>Controls\ImageLoadingControl.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Views\MainView.xbf">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Views\MainView.xbf">
       <PackagePath>Views\MainView.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Views\ProductDetailView.xbf">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Views\ProductDetailView.xbf">
       <PackagePath>Views\ProductDetailView.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
@@ -628,11 +625,11 @@
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\microsoft.toolkit.uwp.ui.controls\4.0.0\lib\uap10.0\Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xbf">
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Projects\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Core\TinkoffWinApp.exe">
+    <AppxPackagedFile Include="C:\Projects\TinkoffWinAppGit\TinkoffWinApp\TinkoffWinApp\bin\ARM\Debug\Core\TinkoffWinApp.exe">
       <PackagePath>TinkoffWinApp.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

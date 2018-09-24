@@ -31936,11 +31936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\TinkoffWinApp\\TinkoffWinApp\\TinkoffWinApp.csproj",
+      "projectUniqueName": "C:\\Projects\\TinkoffWinAppGit\\TinkoffWinApp\\TinkoffWinApp\\TinkoffWinApp.csproj",
       "projectName": "TinkoffWinApp",
-      "projectPath": "C:\\Projects\\TinkoffWinApp\\TinkoffWinApp\\TinkoffWinApp.csproj",
+      "projectPath": "C:\\Projects\\TinkoffWinAppGit\\TinkoffWinApp\\TinkoffWinApp\\TinkoffWinApp.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\TinkoffWinApp\\TinkoffWinApp\\obj\\",
+      "outputPath": "C:\\Projects\\TinkoffWinAppGit\\TinkoffWinApp\\TinkoffWinApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

@@ -213,69 +213,57 @@ namespace TinkoffWinApp.TinkoffWinApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[30];
+            _typeNameTable = new string[24];
             _typeNameTable[0] = "Caliburn.Micro.CaliburnApplication";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
-            _typeNameTable[2] = "TinkoffWinApp.Controls.Carousel.LoopingCarouselItem";
-            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Primitives.SelectorItem";
-            _typeNameTable[4] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[5] = "TinkoffWinApp.Controls.Carousel.LoopingCarousel";
-            _typeNameTable[6] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[7] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
-            _typeNameTable[8] = "Object";
-            _typeNameTable[9] = "Int32";
-            _typeNameTable[10] = "Boolean";
-            _typeNameTable[11] = "Double";
-            _typeNameTable[12] = "Windows.UI.Xaml.Controls.Orientation";
-            _typeNameTable[13] = "TinkoffWinApp.Controls.Carousel.LoopingCarouselPanel";
-            _typeNameTable[14] = "Windows.UI.Xaml.Controls.Panel";
-            _typeNameTable[15] = "TinkoffWinApp.Controls.ImageLoadingControl";
-            _typeNameTable[16] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[17] = "String";
-            _typeNameTable[18] = "TinkoffWinApp.Support.Converters.StringToColorConverter";
-            _typeNameTable[19] = "TinkoffWinApp.Controls.LoopItemsPanel";
-            _typeNameTable[20] = "TinkoffWinApp.Views.MainView";
-            _typeNameTable[21] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[22] = "TinkoffWinApp.Views.ProductDetailView";
-            _typeNameTable[23] = "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid";
-            _typeNameTable[24] = "Windows.UI.Xaml.Controls.Grid";
-            _typeNameTable[25] = "System.Nullable`1<Boolean>";
-            _typeNameTable[26] = "System.ValueType";
-            _typeNameTable[27] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[28] = "Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool";
-            _typeNameTable[29] = "Windows.UI.Xaml.Markup.MarkupExtension";
+            _typeNameTable[2] = "TinkoffWinApp.Controls.ImageLoadingControl";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[4] = "String";
+            _typeNameTable[5] = "TinkoffWinApp.Support.Converters.StringToColorConverter";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "Caliburn.Micro.Message";
+            _typeNameTable[8] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[9] = "TinkoffWinApp.Controls.LoopItemsPanel";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Panel";
+            _typeNameTable[11] = "TinkoffWinApp.Views.MainView";
+            _typeNameTable[12] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[13] = "TinkoffWinApp.Views.ProductDetailView";
+            _typeNameTable[14] = "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid";
+            _typeNameTable[15] = "Windows.UI.Xaml.Controls.Grid";
+            _typeNameTable[16] = "Int32";
+            _typeNameTable[17] = "Windows.UI.Xaml.Controls.Orientation";
+            _typeNameTable[18] = "System.Nullable`1<Boolean>";
+            _typeNameTable[19] = "System.ValueType";
+            _typeNameTable[20] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[21] = "Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool";
+            _typeNameTable[22] = "Windows.UI.Xaml.Markup.MarkupExtension";
+            _typeNameTable[23] = "Boolean";
 
-            _typeTable = new global::System.Type[30];
+            _typeTable = new global::System.Type[24];
             _typeTable[0] = typeof(global::Caliburn.Micro.CaliburnApplication);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
-            _typeTable[2] = typeof(global::TinkoffWinApp.Controls.Carousel.LoopingCarouselItem);
-            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Primitives.SelectorItem);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[5] = typeof(global::TinkoffWinApp.Controls.Carousel.LoopingCarousel);
-            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
-            _typeTable[8] = typeof(global::System.Object);
-            _typeTable[9] = typeof(global::System.Int32);
-            _typeTable[10] = typeof(global::System.Boolean);
-            _typeTable[11] = typeof(global::System.Double);
-            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
-            _typeTable[13] = typeof(global::TinkoffWinApp.Controls.Carousel.LoopingCarouselPanel);
-            _typeTable[14] = typeof(global::Windows.UI.Xaml.Controls.Panel);
-            _typeTable[15] = typeof(global::TinkoffWinApp.Controls.ImageLoadingControl);
-            _typeTable[16] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[17] = typeof(global::System.String);
-            _typeTable[18] = typeof(global::TinkoffWinApp.Support.Converters.StringToColorConverter);
-            _typeTable[19] = typeof(global::TinkoffWinApp.Controls.LoopItemsPanel);
-            _typeTable[20] = typeof(global::TinkoffWinApp.Views.MainView);
-            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[22] = typeof(global::TinkoffWinApp.Views.ProductDetailView);
-            _typeTable[23] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid);
-            _typeTable[24] = typeof(global::Windows.UI.Xaml.Controls.Grid);
-            _typeTable[25] = typeof(global::System.Nullable<global::System.Boolean>);
-            _typeTable[26] = typeof(global::System.ValueType);
-            _typeTable[27] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[28] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool);
-            _typeTable[29] = typeof(global::Windows.UI.Xaml.Markup.MarkupExtension);
+            _typeTable[2] = typeof(global::TinkoffWinApp.Controls.ImageLoadingControl);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[4] = typeof(global::System.String);
+            _typeTable[5] = typeof(global::TinkoffWinApp.Support.Converters.StringToColorConverter);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::Caliburn.Micro.Message);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[9] = typeof(global::TinkoffWinApp.Controls.LoopItemsPanel);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Panel);
+            _typeTable[11] = typeof(global::TinkoffWinApp.Views.MainView);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[13] = typeof(global::TinkoffWinApp.Views.ProductDetailView);
+            _typeTable[14] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid);
+            _typeTable[15] = typeof(global::Windows.UI.Xaml.Controls.Grid);
+            _typeTable[16] = typeof(global::System.Int32);
+            _typeTable[17] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
+            _typeTable[18] = typeof(global::System.Nullable<global::System.Boolean>);
+            _typeTable[19] = typeof(global::System.ValueType);
+            _typeTable[20] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[21] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool);
+            _typeTable[22] = typeof(global::Windows.UI.Xaml.Markup.MarkupExtension);
+            _typeTable[23] = typeof(global::System.Boolean);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -310,16 +298,13 @@ namespace TinkoffWinApp.TinkoffWinApp_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_2_LoopingCarouselItem() { return new global::TinkoffWinApp.Controls.Carousel.LoopingCarouselItem(); }
-        private object Activate_5_LoopingCarousel() { return new global::TinkoffWinApp.Controls.Carousel.LoopingCarousel(); }
-        private object Activate_13_LoopingCarouselPanel() { return new global::TinkoffWinApp.Controls.Carousel.LoopingCarouselPanel(); }
-        private object Activate_15_ImageLoadingControl() { return new global::TinkoffWinApp.Controls.ImageLoadingControl(); }
-        private object Activate_18_StringToColorConverter() { return new global::TinkoffWinApp.Support.Converters.StringToColorConverter(); }
-        private object Activate_19_LoopItemsPanel() { return new global::TinkoffWinApp.Controls.LoopItemsPanel(); }
-        private object Activate_20_MainView() { return new global::TinkoffWinApp.Views.MainView(); }
-        private object Activate_22_ProductDetailView() { return new global::TinkoffWinApp.Views.ProductDetailView(); }
-        private object Activate_23_UniformGrid() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid(); }
-        private object Activate_28_NullableBool() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool(); }
+        private object Activate_2_ImageLoadingControl() { return new global::TinkoffWinApp.Controls.ImageLoadingControl(); }
+        private object Activate_5_StringToColorConverter() { return new global::TinkoffWinApp.Support.Converters.StringToColorConverter(); }
+        private object Activate_9_LoopItemsPanel() { return new global::TinkoffWinApp.Controls.LoopItemsPanel(); }
+        private object Activate_11_MainView() { return new global::TinkoffWinApp.Views.MainView(); }
+        private object Activate_13_ProductDetailView() { return new global::TinkoffWinApp.Views.ProductDetailView(); }
+        private object Activate_14_UniformGrid() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid(); }
+        private object Activate_21_NullableBool() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -340,130 +325,76 @@ namespace TinkoffWinApp.TinkoffWinApp_XamlTypeInfo
                 xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  TinkoffWinApp.Controls.Carousel.LoopingCarouselItem
-                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Primitives.SelectorItem"));
-                userType.Activator = Activate_2_LoopingCarouselItem;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 3:   //  Windows.UI.Xaml.Controls.Primitives.SelectorItem
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 4:   //  Windows.UI.Xaml.Controls.ContentControl
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 5:   //  TinkoffWinApp.Controls.Carousel.LoopingCarousel
-                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
-                userType.Activator = Activate_5_LoopingCarousel;
-                userType.AddMemberName("EasingFunction");
-                userType.AddMemberName("SelectedItem");
-                userType.AddMemberName("SelectedIndex");
-                userType.AddMemberName("TransitionDuration");
-                userType.AddMemberName("ItemDepth");
-                userType.AddMemberName("ItemMargin");
-                userType.AddMemberName("InvertPositive");
-                userType.AddMemberName("ItemRotationX");
-                userType.AddMemberName("ItemRotationY");
-                userType.AddMemberName("ItemRotationZ");
-                userType.AddMemberName("Orientation");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  Windows.UI.Xaml.Controls.ItemsControl
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 7:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  Object
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 9:   //  Int32
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 10:   //  Boolean
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 11:   //  Double
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 12:   //  Windows.UI.Xaml.Controls.Orientation
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 13:   //  TinkoffWinApp.Controls.Carousel.LoopingCarouselPanel
-                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Panel"));
-                userType.Activator = Activate_13_LoopingCarouselPanel;
-                userType.AddMemberName("Carousel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 14:   //  Windows.UI.Xaml.Controls.Panel
-                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 15:   //  TinkoffWinApp.Controls.ImageLoadingControl
+            case 2:   //  TinkoffWinApp.Controls.ImageLoadingControl
                 userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_15_ImageLoadingControl;
+                userType.Activator = Activate_2_ImageLoadingControl;
                 userType.AddMemberName("ImageAddress");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Windows.UI.Xaml.Controls.UserControl
+            case 3:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  String
+            case 4:   //  String
                 xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 18:   //  TinkoffWinApp.Support.Converters.StringToColorConverter
+            case 5:   //  TinkoffWinApp.Support.Converters.StringToColorConverter
                 userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_18_StringToColorConverter;
+                userType.Activator = Activate_5_StringToColorConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  TinkoffWinApp.Controls.LoopItemsPanel
-                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Panel"));
-                userType.Activator = Activate_19_LoopItemsPanel;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 20:   //  TinkoffWinApp.Views.MainView
-                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_MainView;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 21:   //  Windows.UI.Xaml.Controls.Page
+            case 6:   //  Object
                 xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  TinkoffWinApp.Views.ProductDetailView
-                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_ProductDetailView;
+            case 7:   //  Caliburn.Micro.Message
+                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("Attach");
+                userType.AddMemberName("Handler");
+                xamlType = userType;
+                break;
+
+            case 8:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  TinkoffWinApp.Controls.LoopItemsPanel
+                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Panel"));
+                userType.Activator = Activate_9_LoopItemsPanel;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid
+            case 10:   //  Windows.UI.Xaml.Controls.Panel
+                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  TinkoffWinApp.Views.MainView
+                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_MainView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  TinkoffWinApp.Views.ProductDetailView
+                userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_ProductDetailView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid
                 userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Grid"));
-                userType.Activator = Activate_23_UniformGrid;
+                userType.Activator = Activate_14_UniformGrid;
                 userType.AddMemberName("Columns");
                 userType.AddMemberName("FirstColumn");
                 userType.AddMemberName("Orientation");
@@ -473,28 +404,36 @@ namespace TinkoffWinApp.TinkoffWinApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 24:   //  Windows.UI.Xaml.Controls.Grid
+            case 15:   //  Windows.UI.Xaml.Controls.Grid
                 xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 25:   //  System.Nullable`1<Boolean>
+            case 16:   //  Int32
+                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 17:   //  Windows.UI.Xaml.Controls.Orientation
+                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 18:   //  System.Nullable`1<Boolean>
                 userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 26:   //  System.ValueType
+            case 19:   //  System.ValueType
                 userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 27:   //  Windows.UI.Xaml.FrameworkElement
+            case 20:   //  Windows.UI.Xaml.FrameworkElement
                 xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool
+            case 21:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool
                 userType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Markup.MarkupExtension"));
-                userType.Activator = Activate_28_NullableBool;
+                userType.Activator = Activate_21_NullableBool;
                 userType.AddMemberName("Value");
                 userType.AddMemberName("IsNull");
                 userType.SetIsBindable();
@@ -502,7 +441,11 @@ namespace TinkoffWinApp.TinkoffWinApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  Windows.UI.Xaml.Markup.MarkupExtension
+            case 22:   //  Windows.UI.Xaml.Markup.MarkupExtension
+                xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 23:   //  Boolean
                 xamlType = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -568,195 +511,96 @@ namespace TinkoffWinApp.TinkoffWinApp_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_LoopingCarousel_EasingFunction(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.EasingFunction;
-        }
-        private void set_0_LoopingCarousel_EasingFunction(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.EasingFunction = (global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase)Value;
-        }
-        private object get_1_LoopingCarousel_SelectedItem(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.SelectedItem;
-        }
-        private void set_1_LoopingCarousel_SelectedItem(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.SelectedItem = (global::System.Object)Value;
-        }
-        private object get_2_LoopingCarousel_SelectedIndex(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.SelectedIndex;
-        }
-        private void set_2_LoopingCarousel_SelectedIndex(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.SelectedIndex = (global::System.Int32)Value;
-        }
-        private object get_3_LoopingCarousel_TransitionDuration(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.TransitionDuration;
-        }
-        private void set_3_LoopingCarousel_TransitionDuration(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.TransitionDuration = (global::System.Int32)Value;
-        }
-        private object get_4_LoopingCarousel_ItemDepth(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.ItemDepth;
-        }
-        private void set_4_LoopingCarousel_ItemDepth(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.ItemDepth = (global::System.Int32)Value;
-        }
-        private object get_5_LoopingCarousel_ItemMargin(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.ItemMargin;
-        }
-        private void set_5_LoopingCarousel_ItemMargin(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.ItemMargin = (global::System.Int32)Value;
-        }
-        private object get_6_LoopingCarousel_InvertPositive(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.InvertPositive;
-        }
-        private void set_6_LoopingCarousel_InvertPositive(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.InvertPositive = (global::System.Boolean)Value;
-        }
-        private object get_7_LoopingCarousel_ItemRotationX(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.ItemRotationX;
-        }
-        private void set_7_LoopingCarousel_ItemRotationX(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.ItemRotationX = (global::System.Double)Value;
-        }
-        private object get_8_LoopingCarousel_ItemRotationY(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.ItemRotationY;
-        }
-        private void set_8_LoopingCarousel_ItemRotationY(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.ItemRotationY = (global::System.Double)Value;
-        }
-        private object get_9_LoopingCarousel_ItemRotationZ(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.ItemRotationZ;
-        }
-        private void set_9_LoopingCarousel_ItemRotationZ(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.ItemRotationZ = (global::System.Double)Value;
-        }
-        private object get_10_LoopingCarousel_Orientation(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            return that.Orientation;
-        }
-        private void set_10_LoopingCarousel_Orientation(object instance, object Value)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarousel)instance;
-            that.Orientation = (global::Windows.UI.Xaml.Controls.Orientation)Value;
-        }
-        private object get_11_LoopingCarouselPanel_Carousel(object instance)
-        {
-            var that = (global::TinkoffWinApp.Controls.Carousel.LoopingCarouselPanel)instance;
-            return that.Carousel;
-        }
-        private object get_12_ImageLoadingControl_ImageAddress(object instance)
+        private object get_0_ImageLoadingControl_ImageAddress(object instance)
         {
             var that = (global::TinkoffWinApp.Controls.ImageLoadingControl)instance;
             return that.ImageAddress;
         }
-        private void set_12_ImageLoadingControl_ImageAddress(object instance, object Value)
+        private void set_0_ImageLoadingControl_ImageAddress(object instance, object Value)
         {
             var that = (global::TinkoffWinApp.Controls.ImageLoadingControl)instance;
             that.ImageAddress = (global::System.String)Value;
         }
-        private object get_13_UniformGrid_Columns(object instance)
+        private object get_1_Message_Attach(object instance)
+        {
+            return global::Caliburn.Micro.Message.GetAttach((global::Windows.UI.Xaml.DependencyObject)instance);
+        }
+        private void set_1_Message_Attach(object instance, object Value)
+        {
+            global::Caliburn.Micro.Message.SetAttach((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.String)Value);
+        }
+        private object get_2_Message_Handler(object instance)
+        {
+            return global::Caliburn.Micro.Message.GetHandler((global::Windows.UI.Xaml.DependencyObject)instance);
+        }
+        private void set_2_Message_Handler(object instance, object Value)
+        {
+            global::Caliburn.Micro.Message.SetHandler((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.Object)Value);
+        }
+        private object get_3_UniformGrid_Columns(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             return that.Columns;
         }
-        private void set_13_UniformGrid_Columns(object instance, object Value)
+        private void set_3_UniformGrid_Columns(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             that.Columns = (global::System.Int32)Value;
         }
-        private object get_14_UniformGrid_FirstColumn(object instance)
+        private object get_4_UniformGrid_FirstColumn(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             return that.FirstColumn;
         }
-        private void set_14_UniformGrid_FirstColumn(object instance, object Value)
+        private void set_4_UniformGrid_FirstColumn(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             that.FirstColumn = (global::System.Int32)Value;
         }
-        private object get_15_UniformGrid_Orientation(object instance)
+        private object get_5_UniformGrid_Orientation(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             return that.Orientation;
         }
-        private void set_15_UniformGrid_Orientation(object instance, object Value)
+        private void set_5_UniformGrid_Orientation(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             that.Orientation = (global::Windows.UI.Xaml.Controls.Orientation)Value;
         }
-        private object get_16_UniformGrid_Rows(object instance)
+        private object get_6_UniformGrid_Rows(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             return that.Rows;
         }
-        private void set_16_UniformGrid_Rows(object instance, object Value)
+        private void set_6_UniformGrid_Rows(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             that.Rows = (global::System.Int32)Value;
         }
-        private object get_17_UniformGrid_AutoLayout(object instance)
+        private object get_7_UniformGrid_AutoLayout(object instance)
         {
             return global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.GetAutoLayout((global::Windows.UI.Xaml.FrameworkElement)instance);
         }
-        private void set_17_UniformGrid_AutoLayout(object instance, object Value)
+        private void set_7_UniformGrid_AutoLayout(object instance, object Value)
         {
             global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.SetAutoLayout((global::Windows.UI.Xaml.FrameworkElement)instance, (global::System.Nullable<global::System.Boolean>)Value);
         }
-        private object get_18_NullableBool_Value(object instance)
+        private object get_8_NullableBool_Value(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool)instance;
             return that.Value;
         }
-        private void set_18_NullableBool_Value(object instance, object Value)
+        private void set_8_NullableBool_Value(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool)instance;
             that.Value = (global::System.Boolean)Value;
         }
-        private object get_19_NullableBool_IsNull(object instance)
+        private object get_9_NullableBool_IsNull(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool)instance;
             return that.IsNull;
         }
-        private void set_19_NullableBool_IsNull(object instance, object Value)
+        private void set_9_NullableBool_IsNull(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool)instance;
             that.IsNull = (global::System.Boolean)Value;
@@ -769,123 +613,56 @@ namespace TinkoffWinApp.TinkoffWinApp_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.EasingFunction":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "EasingFunction", "Windows.UI.Xaml.Media.Animation.EasingFunctionBase");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_LoopingCarousel_EasingFunction;
-                xamlMember.Setter = set_0_LoopingCarousel_EasingFunction;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.SelectedItem":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_1_LoopingCarousel_SelectedItem;
-                xamlMember.Setter = set_1_LoopingCarousel_SelectedItem;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.SelectedIndex":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_LoopingCarousel_SelectedIndex;
-                xamlMember.Setter = set_2_LoopingCarousel_SelectedIndex;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.TransitionDuration":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "TransitionDuration", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_LoopingCarousel_TransitionDuration;
-                xamlMember.Setter = set_3_LoopingCarousel_TransitionDuration;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.ItemDepth":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "ItemDepth", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_LoopingCarousel_ItemDepth;
-                xamlMember.Setter = set_4_LoopingCarousel_ItemDepth;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.ItemMargin":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "ItemMargin", "Int32");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_LoopingCarousel_ItemMargin;
-                xamlMember.Setter = set_5_LoopingCarousel_ItemMargin;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.InvertPositive":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "InvertPositive", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_LoopingCarousel_InvertPositive;
-                xamlMember.Setter = set_6_LoopingCarousel_InvertPositive;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.ItemRotationX":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "ItemRotationX", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_LoopingCarousel_ItemRotationX;
-                xamlMember.Setter = set_7_LoopingCarousel_ItemRotationX;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.ItemRotationY":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "ItemRotationY", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_LoopingCarousel_ItemRotationY;
-                xamlMember.Setter = set_8_LoopingCarousel_ItemRotationY;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.ItemRotationZ":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "ItemRotationZ", "Double");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_LoopingCarousel_ItemRotationZ;
-                xamlMember.Setter = set_9_LoopingCarousel_ItemRotationZ;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarousel.Orientation":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "Orientation", "Windows.UI.Xaml.Controls.Orientation");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_LoopingCarousel_Orientation;
-                xamlMember.Setter = set_10_LoopingCarousel_Orientation;
-                break;
-            case "TinkoffWinApp.Controls.Carousel.LoopingCarouselPanel.Carousel":
-                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.Carousel.LoopingCarouselPanel");
-                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "Carousel", "TinkoffWinApp.Controls.Carousel.LoopingCarousel");
-                xamlMember.Getter = get_11_LoopingCarouselPanel_Carousel;
-                xamlMember.SetIsReadOnly();
-                break;
             case "TinkoffWinApp.Controls.ImageLoadingControl.ImageAddress":
                 userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TinkoffWinApp.Controls.ImageLoadingControl");
                 xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "ImageAddress", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_ImageLoadingControl_ImageAddress;
-                xamlMember.Setter = set_12_ImageLoadingControl_ImageAddress;
+                xamlMember.Getter = get_0_ImageLoadingControl_ImageAddress;
+                xamlMember.Setter = set_0_ImageLoadingControl_ImageAddress;
+                break;
+            case "Caliburn.Micro.Message.Attach":
+                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.Message");
+                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "Attach", "String");
+                xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
+                xamlMember.SetIsAttachable();
+                xamlMember.Getter = get_1_Message_Attach;
+                xamlMember.Setter = set_1_Message_Attach;
+                break;
+            case "Caliburn.Micro.Message.Handler":
+                userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Caliburn.Micro.Message");
+                xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "Handler", "Object");
+                xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
+                xamlMember.SetIsAttachable();
+                xamlMember.Getter = get_2_Message_Handler;
+                xamlMember.Setter = set_2_Message_Handler;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.Columns":
                 userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
                 xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "Columns", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_UniformGrid_Columns;
-                xamlMember.Setter = set_13_UniformGrid_Columns;
+                xamlMember.Getter = get_3_UniformGrid_Columns;
+                xamlMember.Setter = set_3_UniformGrid_Columns;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.FirstColumn":
                 userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
                 xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "FirstColumn", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_UniformGrid_FirstColumn;
-                xamlMember.Setter = set_14_UniformGrid_FirstColumn;
+                xamlMember.Getter = get_4_UniformGrid_FirstColumn;
+                xamlMember.Setter = set_4_UniformGrid_FirstColumn;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.Orientation":
                 userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
                 xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "Orientation", "Windows.UI.Xaml.Controls.Orientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_UniformGrid_Orientation;
-                xamlMember.Setter = set_15_UniformGrid_Orientation;
+                xamlMember.Getter = get_5_UniformGrid_Orientation;
+                xamlMember.Setter = set_5_UniformGrid_Orientation;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.Rows":
                 userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
                 xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "Rows", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_UniformGrid_Rows;
-                xamlMember.Setter = set_16_UniformGrid_Rows;
+                xamlMember.Getter = get_6_UniformGrid_Rows;
+                xamlMember.Setter = set_6_UniformGrid_Rows;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.AutoLayout":
                 userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
@@ -893,20 +670,20 @@ namespace TinkoffWinApp.TinkoffWinApp_XamlTypeInfo
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.FrameworkElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_17_UniformGrid_AutoLayout;
-                xamlMember.Setter = set_17_UniformGrid_AutoLayout;
+                xamlMember.Getter = get_7_UniformGrid_AutoLayout;
+                xamlMember.Setter = set_7_UniformGrid_AutoLayout;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool.Value":
                 userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool");
                 xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "Value", "Boolean");
-                xamlMember.Getter = get_18_NullableBool_Value;
-                xamlMember.Setter = set_18_NullableBool_Value;
+                xamlMember.Getter = get_8_NullableBool_Value;
+                xamlMember.Setter = set_8_NullableBool_Value;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool.IsNull":
                 userType = (global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool");
                 xamlMember = new global::TinkoffWinApp.TinkoffWinApp_XamlTypeInfo.XamlMember(this, "IsNull", "Boolean");
-                xamlMember.Getter = get_19_NullableBool_IsNull;
-                xamlMember.Setter = set_19_NullableBool_IsNull;
+                xamlMember.Getter = get_9_NullableBool_IsNull;
+                xamlMember.Setter = set_9_NullableBool_IsNull;
                 break;
             }
             return xamlMember;

@@ -13,7 +13,6 @@ namespace TinkoffWinApp.Controls
         private Slider sliderHorizontal;
         private double offsetSeparator;        
         private double itemWidth = 1d;
-        private bool templateApplied;
 
         private int ItemsCount => Children != null ? Children.Count : 0;
 
@@ -119,8 +118,6 @@ namespace TinkoffWinApp.Controls
 
                 positionLeft += desiredSize.Width;
             }
-
-            templateApplied = true;
 
             return finalSize;
         }

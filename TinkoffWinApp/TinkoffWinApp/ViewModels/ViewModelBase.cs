@@ -2,12 +2,24 @@
 using System;
 using System.Threading.Tasks;
 using TinkoffWinApp.Support;
+using Windows.UI.Xaml;
 
 namespace TinkoffWinApp.ViewModels
 {
     public abstract class ViewModelBase : Screen
     {
         protected readonly INavigationService NavigationService;
+
+        private Visibility _appBarVisibility;
+        public Visibility AppBarVisibility
+        {
+            get { return _appBarVisibility; }
+            set
+            {
+                _appBarVisibility = value;
+                NotifyOfPropertyChange();
+            }
+        }
 
         private bool _isLoading;
         public bool IsLoading
@@ -19,6 +31,7 @@ namespace TinkoffWinApp.ViewModels
                     return;
                 _isLoading = value;
                 NotifyOfPropertyChange();
+                SetAppBarVisibility(!value);
                 if (value)
                     LoadingHelper.GetInstance.StartLoadingIndicator();
                 else
@@ -29,6 +42,11 @@ namespace TinkoffWinApp.ViewModels
         public ViewModelBase(INavigationService navigationService)
         {
             NavigationService = navigationService;
+        }
+
+        public void SetAppBarVisibility(bool isVisible)
+        {
+            AppBarVisibility = isVisible ? Visibility.Visible : Visibility.Collapsed;
         }
 
         protected async Task<T> LoadTask<T>(Func<Task<T>> taskForCancel)
